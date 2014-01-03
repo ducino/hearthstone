@@ -1,4 +1,4 @@
-hearthstone
+Hearthstone
 ===========
 
-Hearthstone analysis
+Hearthstone data analysis.
