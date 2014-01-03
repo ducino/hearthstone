@@ -935,7 +935,7 @@
     {
         "collectible": true, 
         "set": "basic", 
-        "description": "Destroy a Demon. Restore #5 Health to your hero.", 
+        "description": "Destroy a Demon. Restore 5 Health to your hero.", 
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/NEW1_003.png", 
         "id": 163, 
@@ -1833,7 +1833,7 @@
     {
         "collectible": true, 
         "set": "basic", 
-        "description": "Restore #6 Health.", 
+        "description": "Restore 6 Health.", 
         "quality": "free", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/CS2_089.png", 
         "id": 291, 
@@ -2777,7 +2777,7 @@
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_275.png", 
         "id": 430, 
-        "mana": 3, 
+        "mana": 4, 
         "attack": null, 
         "race": "none", 
         "health": null, 
@@ -3008,7 +3008,7 @@
         "quality": "rare", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/CS2_028.png", 
         "id": 457, 
-        "mana": 5, 
+        "mana": 6, 
         "attack": null, 
         "race": "none", 
         "health": null, 
@@ -3078,7 +3078,7 @@
     {
         "collectible": true, 
         "set": "basic", 
-        "description": "Return an enemy minion to its owner's hand.", 
+        "description": "Return an enemy minion to your opponent's hand.", 
         "quality": "free", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_581.png", 
         "id": 461, 
@@ -4036,7 +4036,7 @@
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/CS2_026.png", 
         "id": 587, 
-        "mana": 2, 
+        "mana": 3, 
         "attack": null, 
         "race": "none", 
         "health": null, 
@@ -4069,7 +4069,7 @@
     {
         "collectible": true, 
         "set": "expert", 
-        "description": "Restore #8 Health. Draw 3 cards.", 
+        "description": "Restore 8 Health. Draw 3 cards.", 
         "quality": "epic", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_354.png", 
         "id": 594, 
@@ -5302,7 +5302,7 @@
     {
         "collectible": true, 
         "set": "basic", 
-        "description": "Restore #8 Health.", 
+        "description": "Restore 8 Health.", 
         "quality": "free", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/CS2_007.png", 
         "id": 773, 
@@ -5778,7 +5778,7 @@
     {
         "collectible": true, 
         "set": "basic", 
-        "description": "Deal 2 damage to all enemies.  Restore #2 Health to all  friendly characters.", 
+        "description": "Deal 2 damage to all enemies.  Restore 2 Health to all  friendly characters.", 
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/CS1_112.png", 
         "id": 841, 
@@ -6251,7 +6251,7 @@
     {
         "collectible": true, 
         "set": "basic", 
-        "description": "Deal 2 damage. Restore #2 Health to your hero.", 
+        "description": "Deal 2 damage. Restore 2 Health to your hero.", 
         "quality": "free", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/CS2_061.png", 
         "id": 919, 
@@ -7280,7 +7280,7 @@
     {
         "collectible": true, 
         "set": "expert", 
-        "description": "<b>Battlecry</b>: Deal 2 damage to your hero.", 
+        "description": "<b>Battlecry</b>: Deal 3 damage to your hero.", 
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_319.png", 
         "id": 1090, 
@@ -7291,7 +7291,7 @@
         "effect_list": [
             {
                 "effect": "battlecry", 
-                "extra": "Deal 2 damage to your hero"
+                "extra": "Deal 3 damage to your hero"
             }
         ], 
         "type": "minion", 
@@ -7386,7 +7386,7 @@
     {
         "collectible": true, 
         "set": "expert", 
-        "description": "Destroy a minion. Restore #3 Health to your hero.", 
+        "description": "Destroy a minion. Restore 3 Health to your hero.", 
         "quality": "rare", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_309.png", 
         "id": 1100, 
@@ -7904,7 +7904,7 @@
     {
         "collectible": true, 
         "set": "expert", 
-        "description": "Give your Beasts +1 Attack and <b>Charge</b>.", 
+        "description": "For each enemy minion, summon a 1/1 Hound with <b>Charge</b>.", 
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_538.png", 
         "id": 1243, 
@@ -8069,7 +8069,7 @@
     {
         "collectible": true, 
         "set": "expert", 
-        "description": "Restore #4 Health to ALL minions.", 
+        "description": "Restore 4 Health to ALL minions.", 
         "quality": "common", 
         "image": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/EX1_621.png", 
         "id": 1362, 

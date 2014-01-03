@@ -7,52 +7,26 @@ def get_url_contents(url):
 	url_handle = urllib.urlopen(url)
 	return url_handle.read()
 
-def get_table_rows(contents):
+def get_cards_json(contents):
 	bs = BeautifulSoup(contents)
-	table = bs.find(id="cards")
-	rows = table.findAll("tr")
-	# Remove header row
-	rows.pop(0)
-	return rows
-
-def get_cells(row):
-	return row.findAll("td")
-
-def parse_rows(cards, rows):
-	def _cleanup(text):
-		return text.replace("&nbsp;", "").\
-					replace("&#x27;", "'").\
-					replace("&quot;", '"').\
-					replace("&amp;", "&").\
-					replace("&lt;", "<").\
-					replace("&gt;", ">")
-	def _field(index, key):
-		card_data[key] = _cleanup(cells[index].text)
-	for row in rows:
-		cells = get_cells(row)
-		card_data = {}
-		_field(0, "name")
-		_field(1, "type")
-		_field(2, "class")
-		_field(3, "cost")
-		_field(4, "damage")
-		_field(5, "health")
-		cards.append(card_data)
-	return cards
+	div = bs.find(id="lv-hearthstonecards")
+	script = div.findNext("script")
+	chunks = script.text.split(";")
+	variable = ";".join(chunks[3:14])
+	cards_json = variable[23:]
+	valid_cards_json = cards_json.replace("popularity:", '"popularity":')
+	return json.loads(valid_cards_json)
 
 def write_to_file(cards, filename):
 	with open(filename, "w") as out:
 		json.dump(cards, out, indent=4)
 		
-def parse_cards(cards, url):
+def parse_cards(url):
 	contents = get_url_contents(url)
-	rows = get_table_rows(contents)
-	parse_rows(cards, rows)
+	return get_cards_json(contents)
 
 def main():
-	cards = []
-	for i in range(1, 7):
-		parse_cards(cards, "http://www.hearthpwn.com/cards?display=1&page={}".format(i))
+	cards = parse_cards("http://www.hearthhead.com/cards")
 	write_to_file(cards, "simple.json")
 
 if __name__ == "__main__":
