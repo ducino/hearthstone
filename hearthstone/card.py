@@ -26,14 +26,14 @@ class Card(object):
 	def __init__(self, data):
 		self.name = data["name"]
 		self.mana = data["cost"]
-		self.attack = _get_field(data, "attack", 0)
-		self.health = _get_field(data, "health", 0)
+		self.attack = data.get("attack", 0)
+		self.health = data.get("health", 0)
 		self.type = data["type"]
-		self.race = _get_field(data, "race", 0)
-		self.cls = _get_field(data, "classs", 0)
+		self.race = data.get("race", 0)
+		self.cls = data.get("classs", 0)
 		self.set = data["set"]
 		self.quality = data["quality"]
-		self.desc = _get_field(data, "description", "")
+		self.desc = data.get("description", "")
 		self.image = data["image"]
 	
 	def __str__(self):
@@ -53,8 +53,5 @@ class Card(object):
 			   _contains(self.race, keyword) or\
 			   _contains(self.desc, keyword)
 
-def _get_field(data, field, default):
-	return data[field] if field in data else default
-	
 def _contains(sentence, word):
 	return sentence.lower().find(word.lower()) != -1
